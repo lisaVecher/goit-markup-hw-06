@@ -581,32 +581,34 @@
     <!-- Header menu -->
     <div class="mobile-menu">
         <div class="header-menu-container">
-            <button class="open-menu-btn"></button>
+            <button class="open-menu-btn">
+                <svg class="open-menu-btn-icon" width="8" height="8">
+                    <use href="./images/icons.svg#close">
+                    </use>
+                </svg>
+            </button>
             <ul class="open-menu-list">
-
-                <li class="menu-list-item"><a href="#">Studio</a>
+                <li class="menu-list-item"><a class="menu-link studio" href="#">Studio</a>
                 </li>
 
-                <li class="menu-list-item"><a href="#">Portfolio</a>
+                <li class="menu-list-item"><a class="menu-link" href="#">Portfolio</a>
                 </li>
 
-                <li class="menu-list-item"><a href="#">Contacts</a>
+                <li class="menu-list-item"><a class="menu-link" href="#">Contacts</a>
                 </li>
-
             </ul>
             <ul class="menu-contacts-list">
 
-                <li class="contacts-list-item"><a href="tel:110001111111">+11 (000) 111-11-11</a>
+                <li class="contacts-list-item"><a class="menu-contacts-link-tel" href="tel:110001111111">+11 (000)
+                        111-11-11</a>
                 </li>
 
-                <li class="contacts-list-item"><a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <li class="contacts-list-item"><a class="menu-contacts-link"
+                        href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
 
             </ul>
-        </div>
-        <div class="social-media-container">
-            <p class="media-text">Social media</p>
-            <ul class="icons-list-footer">
+            <ul class="icons-list-menu">
                 <li class="icon-footer-item">
                     <a class="icon-footer-link" href="insta-footer">
                         <svg class="icon-footer" width="24" height="24">
@@ -640,7 +642,6 @@
                     </a>
                 </li>
             </ul>
-
         </div>
     </div>
 

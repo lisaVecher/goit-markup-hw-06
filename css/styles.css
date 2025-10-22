@@ -98,17 +98,34 @@ ul {
   font-style: normal;
 }
 
-.address-contact {
-  font-family: "Roboto", sans-serif;
-  color: #434455;
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.address-contact {}
 
+@media only screen and (min-width: 768px) {
+  .address-contact {
+    font-family: "Roboto", sans-serif;
+    color: #434455;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  }
 }
+
+@media only screen and (min-width: 1158px) {
+  .address-contact {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    display: block;
+    padding: 24px 0;
+    gap: 40px;
+  }
+}
+
+
 
 .address-contact:hover,
 .address-contact:focus {
@@ -385,29 +402,32 @@ img {
   }
 }
 
-
-.address-ul {
-  /* display: flex;
-  align-items: center;
-  gap: 40px; */
-}
-
 @media only screen and (max-width: 767px) {
   .address-ul {
     display: none;
   }
 }
 
-.address-list {
-  margin-left: auto;
+@media only screen and (min-width: 768px) {
+  .address-ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+  }
 }
 
-.address-contact {
-  display: block;
-  padding: 24px 0;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@media only screen and (min-width: 1158px) {
+  .address-ul {
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .address-list {
+    margin-left: auto;
+  }
 }
 
 /*Section 1 Heading*/

@@ -1,3 +1,7 @@
+.hide {
+  display: none;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -302,11 +306,24 @@ img {
 }
 
 .container {
-  max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 320px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
 }
 
 /*Header*/
@@ -315,9 +332,13 @@ img {
   border-bottom: 1px solid #e7e9fc;
 }
 
-.header-container {
-  display: flex;
-  align-items: center;
+.header-container {}
+
+@media only screen and (min-width: 768px) {
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .logo-list {
@@ -325,10 +346,18 @@ img {
   align-items: center;
 }
 
-.navigation-list {
-  display: flex;
-  align-items: center;
-  gap: 40px;
+@media only screen and (min-width: 768px) {
+  .navigation-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .navigation-list {
+    display: none;
+  }
 }
 
 .navigation-link-go {
@@ -337,14 +366,36 @@ img {
 }
 
 .logo-title {
-  padding: 24px 0;
-  margin-right: 76px;
+  padding: 16px 0;
+  margin-right: 149px;
 }
 
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .logo-title {
+    padding: 24px 0;
+    margin-right: 120px;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1158px) {
+  .logo-title {
+    margin-right: 76px;
+  }
+}
+
+
 .address-ul {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 40px; */
+}
+
+@media only screen and (max-width: 767px) {
+  .address-ul {
+    display: none;
+  }
 }
 
 .address-list {
@@ -989,4 +1040,33 @@ img {
 
 .original-checkbox:checked+.input-label-checkbox .checkmark {
   opacity: 1;
+}
+
+
+/* Header menu */
+
+.header-menu-btn {
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24;
+  height: 24;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-menu-btn {
+    display: none;
+  }
+}
+
+.header-menu-icon {
+  fill: #2f2f37;
+}
+
+@media not (hover: hover) {
+  .header-menu-btn:active .header-menu-icon {
+    fill: #4D5AE5;
+  }
 }
